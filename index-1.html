@@ -20,6 +20,15 @@
     <h2>List</h2>
     <ul></ul>
   </div>
-  <script src="app.js"></script>
+  <script type="module">
+    import newComponent from './export-1.js'
+    import { aa, add } from './export2-1.js'
+
+    console.log(newComponent)
+    newComponent.render()
+
+    console.log(add(aa, 10))
+  </script>
+  <!-- <script src="app-1.js"></script> -->
 </body>
 </html>
