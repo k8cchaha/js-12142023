@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .component h2{
-      margin: 20px 20px 0;
-    }
-    .component button{
-      margin-left: 20px;
-      padding: 0 10px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <div class="component">
-    <h2>List</h2>
-    <ul></ul>
-  </div>
-  <script type="module">
-    import newComponent from './export-1.js'
-    import { aa, add } from './export2-1.js'
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .component h2 {
+        margin: 20px 20px 0;
+      }
+      .component button {
+        margin-left: 20px;
+        padding: 0 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="component">
+      <h2>List</h2>
+      <ul></ul>
+    </div>
+    <script type="module">
+      import newComponent from './export-1.js'
+      import { aa, add } from './export2-1.js'
 
-    console.log(newComponent)
-    newComponent.render()
+      console.log(newComponent)
+      newComponent.render()
 
-    console.log(add(aa, 10))
-  </script>
-  <!-- <script src="app-1.js"></script> -->
-</body>
+      console.log(add(aa, 10))
+    </script>
+    <!-- <script src="app-1.js"></script> -->
+  </body>
 </html>
